@@ -15,6 +15,10 @@
                 width: 63%;
             }
         }
+        &__medium-6{
+            float: left;
+            width: 50%;
+        }
 
         &__b-margin-until-medium{
              margin-bottom: 1rem;
@@ -22,17 +26,42 @@
 
     }
 
-    &--gutters > div{
-        padding-right: 4rem;
+    &--gutters{
+        margin-right: 0;
+        div{
+            padding-right: 0;
+        }
     }
 
-    &--gutters{
-        margin-right: -4rem;
-    }
+    &--guttrts-large{
+         margin-right: 0;
+        div{
+            padding-right: 0;
+        }
+     }
+
 
     &__b-margin-until-medium{
         margin-bottom: 1rem;
      }
+
+    @mixin atMedium{
+
+    &--gutters{
+        margin-right: -4rem;
+        div{
+            padding-right: 4rem;
+        }
+    }
+
+    &--guttrts-large{
+             margin-right: -5rem;
+        div{
+            padding-right: 5rem;
+        }
+    }
+
+    }
 
     @mixin clearfix;
 }

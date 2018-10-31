@@ -459,6 +459,15 @@ img{
     max-width: 100%;
 }
 
+*{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+a{
+    color: #d59541;
+}
+
 .large-hero{
     border-bottom: 10px solid #2f5572;
     position: relative;
@@ -570,7 +579,8 @@ img{
 .wrapper{
     padding-left: 18px;
     padding-right: 18px;
-    max-width: 1200px;
+    overflow: hidden;
+    max-width: 1236px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -580,9 +590,20 @@ img{
     }
 
 .wrapper .wrapper{
-         padding-left: 0;
-         padding-right: 0;
-     }
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+.wrapper--b-margin {
+        margin-bottom: 1rem;
+    }
+
+@media (min-width: 530px) {
+
+.wrapper--b-margin {
+            margin-bottom: 3.873rem
+    }
+    }
 
 .headline{
     font-weight: 300;
@@ -635,3 +656,76 @@ img{
 .headline--b-margin-large{
         margin-bottom: 1.6em;
      }
+
+.headline--t-margin-no{
+        margin-top: 0;
+      }
+
+.paragraph{
+    line-height: 1.2;
+    font-size: 1rem;
+    margin: 1.0rem 0rem;
+}
+
+.paragraph--bold {
+         font-weight: 700;
+    }
+
+.paragraph--white_text{
+        color: white;
+    }
+
+@media (min-width: 800px) {
+
+.paragraph{
+        line-height: 1.5;
+        font-size: 1.125rem;
+        margin: 1.8rem 0
+}
+    }
+
+@media (min-width: 800px) {
+        .row__medium-4{
+            float: left;
+            width: 33.33%;
+        }
+            .row__medium-4--larger{
+                width: 37%;
+            }
+
+        .row__medium-8{
+            float: left;
+            width: 66.67%;
+        }
+            .row__medium-8--smaller{
+                width: 63%;
+            }
+
+        .row__b-margin-until-medium{
+             margin-bottom: 1rem;
+        }
+    }
+
+.row--gutters > div{
+        padding-right: 4rem;
+    }
+
+.row--gutters{
+        margin-right: -4rem;
+    }
+
+.row__b-margin-until-medium{
+        margin-bottom: 1rem;
+     }
+
+.row::after{
+        content: " ";
+        clear: both;
+        display: table;
+    }
+
+/* margin--device */
+
+.margin_top{
+    margin-top: 1rem;
+}

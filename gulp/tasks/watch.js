@@ -3,13 +3,12 @@ var gulp = require('gulp'),
     browserSync = require('browser-sync').create();
 
 
-    gulp.task('watch', function () {
+gulp.task('watch', function () {
     notify: false,
-        browserSync.init({
-            server: {
-                baseDir: "app"
-            }
-        });
+    browserSync.init({
+        server: { baseDir: "app"},
+        browser: "chrome"
+    });
 
 
 

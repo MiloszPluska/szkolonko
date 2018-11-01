@@ -19,4 +19,13 @@
             margin-bottom: 3.873rem;
         }
     }
+
+    &--no-padding-until-medium{
+        padding-left: 0;
+        padding-right: 0;
+        @atMedium{
+            padding-right: 18px;
+            padding-right: 18px;
+        }
+    }
 }

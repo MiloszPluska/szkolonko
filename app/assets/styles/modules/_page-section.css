@@ -12,10 +12,18 @@
         color: #ffffff;
      }
 
-     &--testimonials{
-        background: url("/assets/images/testimonials-bg.jpg") top center no-repeat;\
-        background-size: cover;
-      }
+    &--testimonials{
+        background-color: #e0e6ef;
+        @mixin atMedium {
+            background: url("/assets/images/testimonials-bg.jpg") top center no-repeat;
+            \ background-size: cover;
+        }
+    }
 
-
+    &--no-b-padding{
+        padding-bottom: 0;
+        @mixin atMedium{
+            padding-bottom: 4.5rem 0;
+        }
+    }
 }

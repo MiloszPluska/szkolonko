@@ -944,3 +944,31 @@ a{
         text-align: center;
         margin: 0.25rem 0 1rem 0;
      }
+
+.site-footer{
+    background-color: #2f5572;
+    font-weight: 100;
+    padding: 0.5rem 0;
+    color: white;
+    margin-top: 0;
+}
+
+.site-footer__wrapper{
+        text-align: center;
+    }
+
+.site-footer__text{
+        margin: 20px 10px;
+        display: block;
+    }
+
+@media (min-width: 800px) {
+
+.site-footer__text{
+            display: inline
+    }
+    }
+
+.site-footer__button{
+        font-weight: 300;
+    }

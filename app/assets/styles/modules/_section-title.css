@@ -3,6 +3,7 @@
     text-align: center;
     font-weight: 300;
 
+
     @mixin atSmall {
         font-size: 3.75rem;
     }

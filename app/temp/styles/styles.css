@@ -972,3 +972,51 @@ a{
 .site-footer__button{
         font-weight: 300;
     }
+
+.site-header{
+    padding: 10px 0;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    background-color: rgba(47,85,114, 0.3);
+}
+
+.site-header__logo{
+        padding: 1rem 2rem;
+        background-color: rgba(47,85,114, 0.9);
+        position: absolute;
+        top: 0;
+    }
+
+.site-header__btn-container{
+        float: right;
+    }
+
+.primary-nav--pull-right{
+        float: right;
+    }
+
+.primary-nav ul{
+        margin: 0;
+        padding: 0;
+    }
+
+.primary-nav ul::after{
+        content: " ";
+        clear: both;
+        display: table;
+    }
+
+.primary-nav li{
+        list-style: none;
+        float: left;
+        padding-right: 20px;
+    }
+
+.primary-nav a{
+       color: #ffffff;
+       text-decoration: none;
+       font-weight: 300;
+        display: block;
+       padding: 12px 0;
+    }
